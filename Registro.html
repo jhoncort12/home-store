@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="css/registro.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <div class="top-bar">
+
+            <a href="index.html">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+
+            <h2>Registro</h2>
+
+        </div>
+
+        <!-- FORMULARIO -->
+
+        <form id="registroForm">
+
+            <div class="input-group">
+                <input type="text" placeholder="nombre" id="nombre">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="apellidos" id="apellido">
+            </div>
+
+            <div class="input-group">
+                <input type="number" placeholder="edad" id="edad">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="numero de retiro" id="retiro">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="pais" id="pais">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="ciudad" id="ciudad">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="barrio" id="barrio">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="direccion" id="direccion">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="numero telefono" id="numero">
+            </div>
+
+            <p id="mensajeError"></p>
+
+            <button type="submit" class="continuar-btn">
+                continuar
+            </button>
+
+        </form>
+
+        <!-- FOOTER -->
+
+        <div class="bottom-bar">
+
+            <button class="ubicacion-btn">
+                <i class="fa-solid fa-location-dot"></i>
+            </button>
+
+            <div class="switch"></div>
+
+        </div>
+
+    </div>
+
+    <script src="js/registro.js"></script>
+
+</body>
+</html>

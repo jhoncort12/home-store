@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor que simula la pantalla del celular */
+.historia-wrapper {
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+    position: relative;
+}
+
+/* HEADER */
+.historia-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background: #000000;
+}
+
+.back-btn {
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.vendedor-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #555;
+}
+
+.vendedor-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* CONTENIDO PRINCIPAL */
+.historia-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.imagen-contenedor {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #111;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-contenedor {
+    padding: 20px;
+}
+
+.texto-contenedor p {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: bold; 
+    color: #ffffff;
+}
+
+/* BOTÓN CONTACTAR */
+.historia-footer {
+    padding: 10px 0;
+    background: #24252a; /* Tono gris oscuro del botón */
+}
+
+.btn-contactar {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-contactar:active {
+    background: rgba(255, 255, 255, 0.1); /* Efecto sutil al presionarlo */
+}

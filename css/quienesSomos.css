@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#e3a7d5;
+    font-family:Arial, Helvetica, sans-serif;
+
+    display:flex;
+    justify-content:center;
+}
+
+.quienes-wrapper{
+
+    width:100%;
+
+    max-width:1200px;
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* HEADER */
+
+.quienes-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:#efc0e4;
+}
+
+.quienes-header h1{
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#000;
+}
+
+.back-btn{
+
+    color:#000;
+
+    font-size:22px;
+
+    text-decoration:none;
+}
+
+.header-space{
+    width:22px;
+}
+
+/* VIDEO */
+
+.video-container{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+}
+
+.video-container iframe{
+
+    width:100%;
+
+    max-width:900px;
+
+    height:500px;
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .video-container iframe{
+
+        height:250px;
+    }
+
+    .quienes-header h1{
+
+        font-size:18px;
+    }
+}

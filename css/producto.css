@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e3a7d5;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.producto-wrapper {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    min-height: 100vh;
+
+    background: #e3a7d5;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* HEADER */
+.producto-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #efc0e4;
+}
+
+.producto-header h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.back-btn {
+    color: #000000;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.header-placeholder {
+    width: 22px;
+}
+
+/* CONTENIDO */
+.producto-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTENEDOR HERO DE LA IMAGEN */
+.hero-imagen-container {
+    width: 100%;
+    position: relative;
+    background: #000;
+}
+
+.hero-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+.hero-imagen-container{
+
+    max-height: 550px;
+
+    overflow: hidden;
+}
+
+/* Ícono 360° Superior Derecho */
+.icon-360 {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* Fila de Botones Flotantes */
+.acciones-flotantes {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.btn-flotante {
+    background: rgba(0, 0, 0, 0.4); /* Fondo negro translúcido */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-flotante:active {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* DETALLES DE ABAJO */
+.detalles-container {
+    padding: 20px;
+}
+
+.detalles-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.label-descripciones {
+    font-weight: bold;
+    color: #000000;
+    font-size: 15px;
+}
+
+.label-precio {
+    font-weight: bold;
+    color: #000000;
+    font-size: 15px;
+}
+
+/* CONTENEDOR DE TARJETAS METRICAS */
+.tarjetas-metricas {
+    display: flex;
+    gap: 15px;
+}
+
+.tarjeta-metrica {
+    flex: 1;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Colores de las tarjetas basados en tu captura */
+.tarjeta-metrica.rosa {
+    background-color: #f7d3e3; 
+    border: none;
+}
+
+.tarjeta-metrica.azul {
+    background-color: #e6e6ff;
+    border: 2px solid #007bff;
+}
+
+.metrica-fila {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #333333;
+}
+
+.metrica-lbl {
+    font-weight: normal;
+}
+
+.metrica-val {
+    font-weight: bold;
+}
+
+/* FOOTER CARRITO */
+.producto-footer {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:#efc0e4;
+
+    border-top:1px solid rgba(0,0,0,0.05);
+}
+
+.carrito-text {
+    font-weight: bold;
+    color: #000000;
+    font-size: 16px;
+}
+
+/* BOTON CARRITO */
+
+.btn-carrito{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    width:100%;
+
+    max-width:320px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#141414;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.25s ease;
+
+    box-shadow:
+    0 8px 18px rgba(0,0,0,0.18);
+}
+
+.btn-carrito i{
+    font-size:18px;
+}
+
+.btn-carrito:hover{
+
+    transform:translateY(-2px);
+
+    background:#252525;
+}
+
+.btn-carrito:active{
+
+    transform:scale(0.98);
+}
