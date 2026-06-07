@@ -137,25 +137,25 @@ body {
 .label-descripciones {
     font-weight: bold;
     color: #000000;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .label-precio {
     font-weight: bold;
     color: #000000;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 /* CONTENEDOR DE TARJETAS METRICAS */
 .tarjetas-metricas {
     display: flex;
-    gap: 15px;
+    gap: 16px;
 }
 
 .tarjeta-metrica {
     flex: 1;
     border-radius: 8px;
-    padding: 15px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 12px;

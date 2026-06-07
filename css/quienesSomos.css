@@ -69,13 +69,37 @@ body{
 
     display:flex;
 
+    flex-direction:column;
+
     justify-content:center;
 
     align-items:center;
 
     padding:30px;
+
+    gap:20px;
+}
+.video-descripcion{
+
+    max-width:900px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,0.35);
+
+    padding:15px 20px;
+
+    border-radius:15px;
 }
 
+.video-descripcion p{
+
+    color:#000;
+
+    font-size:16px;
+
+    line-height:1.5;
+}
 .video-container iframe{
 
     width:100%;

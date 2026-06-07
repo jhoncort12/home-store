@@ -117,3 +117,36 @@ header a {
     color: #666;
     margin-top: 2px;
 }
+.categoria-card{
+    transition: 0.25s ease;
+}
+
+.categoria-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    background: #f4cfe9;
+}
+
+.categoria-card:active{
+    transform: scale(0.97);
+}
+.historia-add{
+    transition: 0.25s ease;
+}
+
+.historia-add:hover{
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.historia-add:active{
+    transform: scale(0.95);
+}
+.historia{
+    transition: 0.25s ease;
+}
+
+.historia:hover{
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
